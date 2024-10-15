@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Myone</title>
+    <style>
+        body{
+            background-color: #D7D5D5;
+        }
+    </style>
+</head>
+<body class="bg-stone-200">
+    
+    <div id="main" class="">
+        <div class="page1 bg-stone-200 h-screen w-full relative flex flex-col justify-center items-center"  >
+            <div class="nav fixed top-0 flex justify-between items-center px-8 py-3 rounded-b-xl bg-stone-200 
+            shadow-xl backdrop-blur-2xl fixed top-0 left-0 right-0 z-10">
+                <div class="logo"> <i class="ri-cake-fill text-2xl"></i></div>
+                <div class="menu"><a href="/logout"><h1 class="text-md bg-stone-900 rounded-lg text-stone-100 px-3 py-2"><i class="ri-logout-box-line"></i> logout</h1></a></div>
+            </div>
+            <div class="banner h-screen w-full flex flex-col  justify-center items-center gap-10 relative z-1">
+               <div class="video-container flex justify-center items-center-screen w-screen z-0 ">             
+                   <div style="width:100%;height:0;padding-bottom:56%;position:absolute;bottom:0;left:0;">
+                    <iframe src="https://giphy.com/embed/h4Z6kVZPthMfL1zCt0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div>
+                   <div class="banner-text text-center relative px-5 mb-8 z-1">
+                       <h1 class="text-6xl font-extrabold text-stone-900 mb-2 text-shadow-xl shadow-stone-900 tracking-tighter" >HAPPY</h1>
+                       <h1 class="text-6xl font-extrabold text-stone-900 mb-2 text-shadow-xl shadow-stone-900 tracking-tighter " >BIRTHDAY</h1>
+                       <h1 id="typewriter" class="text-6xl font-extrabold text-orange-500 mb-2 text-shadow-xl shadow-stone-900 tracking-tighter">wdwedwed</h1>
+                       <div class="flex justify-center items-center gap-5 mt-10">
+                        <div class=" animate-bounce"><h2><i class="ri-arrow-down-line"></i> scroll down</h2></div>
+                       </div>
+                   </div>
+               </div>
+               
+            </div>
+        </div>
+
+        <div class="page2 gap-5 bg-stone-100 rounded-b-2xl w-full py-16  px-5 justify-between flex flex-col relative" > 
+            <div class="h-48 w-full " >
+            <!-- <video id="vid" src="/images/fb075232e0825b260bc4ecef3601d3de.mp4" autoplay loop muted class="rounded-xl h-full w-full object-cover"> -->
+                <img src="/images/👅.jpg" class="h-full w-full object-cover">
+            </video>
+            </div>
+            <div class="overflow-hidden marquee-container">
+
+                <div class="marquee-content flex gap-4 items-center">
+                 <h1 class="text-4xl font-bold">WISH YOU MANY MANY</h1>
+                 <h1 class="text-4xl font-bold"> HAPPY RETURNS OF THE DAY</h1>
+                </div>
+            </div>
+            <div id="welcome-text" class="opacity-1 relative bg-transparent">
+               
+                <h1 class="text-2xl text-center text-stone-800 " >Welcome to INFINITY, an extraordinary event that promises to take you on a transformative journey.
+                     Immerse yourself in a captivating world where boundaries dissolve, and imagination knows no limits.
+                      This event 
+                      is designed to inspire, ignite, and leave you with lasting memories.
+                      Join us for an unforgettable experience.</h1>
+                      <div class="goeey absolute bottom-5 right-0"></div>
+            </div>
+            <div class="light-effect"></div>
+        </div>
+
+        <div class="py-10 page3 w-full bg-stone-100 flex flex-col items-center justify-center gap-5 px-5 overflow-x-hidden">
+            <p class="font-bold text-3xl">
+                this is fancy
+                <span class="text-green-500 mx-1 font-extrabold text-4xl relative inline-block stroke-current">
+                    underline
+                    <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none">
+                        <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
+                    </svg>
+                </span>
+                text
+            </p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex justify-center items-center px-3 text-black">just a small 7 years of journey with just 7 photos </div>
+                  <div class="swiper-slide"><img src="/images/1.jpg" class="h-full w-full"></div>
+                  <div class="swiper-slide"><img src="/images/2.jpg" class="h-full w-full"></div>
+                  <div class="swiper-slide"><img src="/images/3.jpg" class="h-full w-full"></div>
+                  <div class="swiper-slide"><img src="/images/4.jpg" class="h-full w-full"></div>
+                  <div class="swiper-slide"><img src="/images/5.jpg" class="h-full w-full"></div>
+                  <div class="swiper-slide"><img src="/images/6.jpg" class="h-full w-full"></div>
+                  <div class="swiper-slide"><img src="/images/7.jpeg" class="h-full w-full"></div>
+                  <div class="swiper-slide flex justify-center items-center px-3 text-black bg-ston-800 text-stone-200">just wanna add more years and memories with you Love you so so much babes </div>
+                </div>
+              </div>
+              <div class="w-full justify-center items-center">
+                <i class="ri-arrow-left-line"></i> swiper there
+              </div>
+        </div>
+
+        <div class="page4  w-full bg-stone-300 flex justify-center items-center">
+            <div class=" p-6 rounded-lg shadow-md w-96">
+                <h1 class="text-xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl p-6">
+                    <span class="block">
+                        This message submiited here will be only just visible to me
+                    </span>
+                </h1>
+                <form action="/data" method="POST">
+                    <div class="mb-4">
+                        <textarea id="userText" name="userText" rows="10" cols="50" placeholder="Type your text here..."
+                                  class="border border-gray-300 rounded-lg w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-stone-200"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-stone-900 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="page5 w-full py-10 bg-stone-900 ">
+            <h1 class="text-4xl font-bold tracking-tight text-stone-100 sm:text-5xl md:text-6xl p-6">
+                <span class="block">
+                   Once again
+                    <span class="text-orange-500">
+                        happy birthday
+                    </span>
+                    may i make your all wishes true
+                </span>
+            </h1>
+            <p class="px-6 text-stone-200 ">And the last millon dollar question about your gift i have already planned it.may it get the way i planned. 
+            </p>
+            <p class="px-6 text-stone-200 ">Also hope you like my this way of wishing you.Bye
+            </p>
+        </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/scripts/home.js"></script>
+</body>
+</html>

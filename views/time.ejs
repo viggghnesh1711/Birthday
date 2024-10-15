@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body >
+    <div class="flex flex-col items-center gap-10 justify-center h-screen relative w-full bg-gray-200">
+        <div class="py-5">
+            <p class="font-bold text-3xl">
+                just 
+                <span class="text-green-500 mx-1 font-extrabold text-4xl relative inline-block stroke-current">
+                    Wait
+                    <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none">
+                        <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
+                    </svg>
+                </span>
+                until
+            </p>
+        </div>
+        <div id="countdown" class="text-3xl bg-stone-700">
+            <div class="flex justify-center space-x-6">
+                <div class="countdown-item bg-gray-300 p-4 rounded-lg shadow-lg flex flex-col items-center">
+                    <span id="days" class="text-3xl font-bold"></span>
+                    <div class="text-sm">Days</div>
+                </div>
+                <div class="countdown-item bg-gray-300 p-4 rounded-lg shadow-lg flex flex-col items-center">
+                    <span id="hours" class="text-3xl font-bold"></span>
+                    <div class="text-sm">Hours</div>
+                </div>
+                <div class="countdown-item bg-gray-300 p-4 rounded-lg shadow-lg flex flex-col items-center">
+                    <span id="minutes" class="text-3xl font-bold"></span>
+                    <div class="text-sm">Minutes</div>
+                </div>
+                <div class="countdown-item bg-gray-300 p-4 rounded-lg shadow-lg flex flex-col items-center">
+                    <span id="seconds" class="text-3xl font-bold"></span>
+                    <div class="text-sm">Seconds</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full relative flex justify-center items-center text-center">
+            <div style="width: 70%; height: 0; padding-bottom: 100%; position: relative;">
+                <iframe src="https://giphy.com/embed/vHvV0vnsQreZFaMamr" width="100%" height="100%" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        // Set the countdown date
+        const countdownDate = new Date("2024-10-17T00:00:00").getTime(); // Set your target date here
+
+        // Update the countdown every 1 second
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the countdown elements
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

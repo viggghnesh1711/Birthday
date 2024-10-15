@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: poppins;
+   
+}
+html{
+  overflow-x:hidden ;
+}
+.bg-custom {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.187), rgb(0, 0, 0)), url('/images/WhatsApp\ Image\ 2024-10-13\ at\ 1.37.32\ PM.jpeg'); /* Apply a darker linear gradient over the image */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Set height to full viewport height */
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-down {
+    animation: slideDown 0.9s ease forwards; /* Adjust duration and easing as needed */
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+  
+  /* Marquee Container */
+  .marquee-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  /* Marquee Content */
+  .marquee-content {
+    display: flex;
+    animation: marquee 10s linear infinite;
+  
+  }
+  
+  .swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-color: #c9c9c9;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  .swiper-slide:nth-child(9n) {
+    /* background-color: rgb(218, 12, 218); */
+  }
+
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
