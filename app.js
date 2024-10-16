@@ -40,7 +40,7 @@ app.get('/', function (req, res) {
     const specificDate = new Date('2024-10-14T23:26:00'); // Set your specific date and time
 
     // Check if the current date is after the specific date
-    if (false) { // {{ edit_1 }}
+    if (true) { // {{ edit_1 }}
         res.render("login", { message: req.flash('error') }); 
     } else {
          res.render("time")
